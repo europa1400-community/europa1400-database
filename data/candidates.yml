@@ -1,0 +1,35 @@
+name: candidates
+elements:
+  - name: executables
+    elements:
+      - path: Gilde.exe
+        metadata:
+          edition: standard
+          language: de
+      - path: GildeGold.exe
+        metadata:
+          edition: gold
+          language: de
+      - path: Europa1400.exe
+        metadata:
+          edition: standard
+      - path: Europa1400Gold.exe
+        metadata:
+          edition: gold
+  - name: tl_executables
+    elements:
+      - path: Gilde_TL.exe
+        metadata:
+          edition: standard
+          language: de
+      - path: GildeGold_TL.exe
+        metadata:
+          edition: gold
+          language: de
+      - path: Europa1400_TL.exe
+        metadata:
+          edition: standard
+      - path: Europa1400Gold_TL.exe
+        metadata:
+          edition: gold
+
