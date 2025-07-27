@@ -1,4 +1,5 @@
-name: executables
+id: executables
+name: Game Executables
 elements:
   - id: gilde
     path: Gilde.exe

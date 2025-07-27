@@ -1,4 +1,5 @@
-name: drm
+id: drm
+name: Game DRMs
 elements:
   - id: none
     name: No DRM

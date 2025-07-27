@@ -1,4 +1,5 @@
-name: edition
+id: edition
+name: Game Editions
 elements:
   - id: standard
     name: Standard Edition

@@ -1,4 +1,5 @@
-name: version
+id: version
+name: Game Versions
 elements:
   - id: v1.01
     name: v1.01

@@ -1,4 +1,5 @@
-name: distribution
+id: distribution
+name: Game Distributions
 elements:
   - id: steam
     name: Steam

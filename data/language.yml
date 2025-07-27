@@ -1,4 +1,5 @@
-name: language
+id: language
+name: Game Languages
 elements:
   - id: en
     name: English

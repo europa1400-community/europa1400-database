@@ -1,4 +1,5 @@
-name: executable_to_metadata
+id: executable_to_metadata
+name: Executable to Metadata Mappings
 elements:
   - executable: gilde
     edition: standard
