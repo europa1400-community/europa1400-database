@@ -1,6 +1,6 @@
-edition:
-  elements:
-    - id: standard
-      name: Standard Edition
-    - id: gold
-      name: Gold Edition
+name: edition
+elements:
+  - id: standard
+    name: Standard Edition
+  - id: gold
+    name: Gold Edition
