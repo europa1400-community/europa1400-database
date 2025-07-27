@@ -1,0 +1,15 @@
+name: executable_to_metadata
+elements:
+  - executable: gilde
+    edition: standard
+    language: de
+  - executable: gilde_gold
+    edition: gold
+    language: de
+  - executable: europa1400
+    edition: standard
+    language: en
+  - executable: europa1400_gold
+    edition: gold
+    language: en
+

@@ -1,0 +1,14 @@
+name: executables
+elements:
+  - id: gilde
+    path: Gilde.exe
+    tl_path: Gilde_TL.exe
+  - id: gilde_gold
+    path: GildeGold.exe
+    tl_path: GildeGold_TL.exe
+  - id: europa1400
+    path: Europa1400.exe
+    tl_path: Europa1400_TL.exe
+  - id: europa1400_gold
+    path: Europa1400Gold.exe
+    tl_path: Europa1400Gold_TL.exe

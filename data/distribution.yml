@@ -1,0 +1,8 @@
+name: distribution
+elements:
+  - id: steam
+    name: Steam
+  - id: gog
+    name: GOG
+  - id: retail
+    name: Retail
