@@ -1,0 +1,8 @@
+drm:
+  elements:
+    - id: none
+      name: No DRM
+    - id: securom
+      name: SecuROM
+    - id: steam
+      name: Steam

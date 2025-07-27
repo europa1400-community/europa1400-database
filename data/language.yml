@@ -1,0 +1,8 @@
+language:
+  elements:
+    - id: en
+      name: English
+    - id: de
+      name: German
+    - id: ru
+      name: Russian

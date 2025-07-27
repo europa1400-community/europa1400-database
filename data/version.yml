@@ -1,0 +1,24 @@
+version:
+  elements:
+    - id: v1.01
+      name: v1.01
+    - id: v1.02
+      name: v1.02
+    - id: v1.03b
+      name: v1.03b
+    - id: v1.04
+      name: v1.04
+    - id: v1.05b
+      name: v1.05b
+    - id: v2.01
+      name: v2.01
+    - id: v2.02
+      name: v2.02
+    - id: v2.03
+      name: v2.03
+    - id: v2.04
+      name: v2.04
+    - id: v2.05
+      name: v2.05
+    - id: v2.06
+      name: v2.06
