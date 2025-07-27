@@ -1,16 +1,24 @@
 id: executable_to_metadata
 name: Executable to Metadata Mappings
 elements:
-  - executable: gilde
-    edition: standard
-    language: de
-  - executable: gilde_gold
-    edition: gold
-    language: de
-  - executable: europa1400
-    edition: standard
-    language: en
-  - executable: europa1400_gold
-    edition: gold
-    language: en
+  - id: gilde
+    executable: gilde
+    metadata:
+      edition: standard
+      language: de
+  - id: gilde_gold
+    executable: gilde_gold
+    metadata:
+      edition: gold
+      language: de
+  - id: europa1400
+    executable: europa1400
+    metadata:
+      edition: standard
+      language: en
+  - id: europa1400_gold
+    executable: europa1400_gold
+    metadata:
+      edition: gold
+      language: en
 
