@@ -1,0 +1,5 @@
+id: patch
+name: Game Patches
+elements:
+  - id: ddraw_compat
+    name: DDrawCompat
