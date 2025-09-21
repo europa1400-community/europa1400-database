@@ -3,3 +3,7 @@ name: Game Patches
 elements:
   - id: ddraw_compat
     name: DDrawCompat
+    url: https://github.com/narzoul/DDrawCompat/releases/download/v0.6.0/DDrawCompat-v0.6.0.zip
+  - id: networkfix
+    name: Network Fix
+    url: https://github.com/maci0/europa1400-networkfix/releases/download/latest/networkfix.asi
