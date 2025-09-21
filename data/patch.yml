@@ -5,6 +5,7 @@ elements:
     name: DDrawCompat
     type: archive
     url: https://github.com/narzoul/DDrawCompat/releases/download/v0.6.0/DDrawCompat-v0.6.0.zip
+    file_name: ddraw.dll
   - id: networkfix
     name: Network Fix
     type: simple
