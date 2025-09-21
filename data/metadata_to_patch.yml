@@ -1,6 +1,7 @@
 id: metadata_to_patch
 name: Metadata to Patch Mappings
 elements:
-  - id: ddraw_compat
-    patch: ddraw_compat
-    metadata: {}
+  - id: networkfix
+    patch: networkfix
+    metadata:
+      edition: gold
