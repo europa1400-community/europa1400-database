@@ -20,4 +20,6 @@ elements:
     name: DxWrapper
     type: archive
     url: https://github.com/elishacloud/dxwrapper/releases/download/v1.4.7900.25/dx8.games.zip
-    file_name: d3d8.dll
+    file_name: 
+      - d3d8.dll
+      - dxwrapper.dll
