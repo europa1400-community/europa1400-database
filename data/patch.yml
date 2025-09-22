@@ -23,3 +23,4 @@ elements:
     file_name: 
       - d3d8.dll
       - dxwrapper.dll
+      - dxwrapper.ini
