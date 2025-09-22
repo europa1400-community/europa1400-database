@@ -26,6 +26,7 @@ elements:
       - dxwrapper.ini
     file_operations:
       - type: ini
+        file_name: dxwrapper.ini
         section: d3d9
         key: SetPOW2Caps
         value: 1
