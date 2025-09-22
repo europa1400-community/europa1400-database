@@ -5,3 +5,9 @@ elements:
     patch: networkfix
     metadata:
       edition: gold
+  - id: dxvk
+    patch: dxvk
+    metadata: {}
+  - id: dxwrapper
+    patch: dxwrapper
+    metadata: {}

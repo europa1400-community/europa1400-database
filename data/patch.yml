@@ -10,3 +10,13 @@ elements:
     name: Network Fix
     type: simple
     url: https://github.com/maci0/europa1400-networkfix/releases/download/latest/networkfix.asi
+  - id: dxvk
+    name: DXVK
+    type: archive
+    url: https://github.com/doitsujin/dxvk/releases/download/v2.7.1/dxvk-2.7.1.tar.gz
+    file_name: d3d9.dll
+    archive_file_name: x64/d3d9.dll
+  - id: dxwrapper
+    name: DxWrapper
+    url: https://github.com/elishacloud/dxwrapper/releases/download/v1.4.7900.25/dx8.games.zip
+    file_name: d3d8.dll
