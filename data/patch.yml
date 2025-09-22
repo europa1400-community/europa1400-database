@@ -24,3 +24,8 @@ elements:
       - d3d8.dll
       - dxwrapper.dll
       - dxwrapper.ini
+    file_operations:
+      - type: ini
+        section: d3d9
+        key: SetPOW2Caps
+        value: 1
