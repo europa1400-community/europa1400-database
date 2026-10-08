@@ -1,7 +1,7 @@
 [project]
 name = "europa1400-database"
 version = "0.1.0"
-description = "Add your description here"
+description = "Game versions and patches of Europa 1400: The Guild"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
