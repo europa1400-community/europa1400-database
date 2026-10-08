@@ -1,13 +1,40 @@
 id: e1400patch
 name: europa1400-patches (patch loader and patch modules, needs europa1400-manager 1.2 or newer)
+# version: keep in step with the europa1400-patches release (the URLs always point to the latest release).
 elements:
   - id: e1400patch
     name: E1400 Patch Loader
     type: e1400patch_loader
     url: https://github.com/europa1400-community/europa1400-patches/releases/latest/download/e1400patch.zip
+    version: 0.1.0
+    category: tools
+    author: europa1400-community
+    homepage: https://github.com/europa1400-community/europa1400-patches
+    description:
+      en: >-
+        Loads community patches into the game without replacing game files. Installed automatically with the patches
+        that need it.
+      de: >-
+        Lädt Community-Patches ins Spiel, ohne Spieldateien zu ersetzen. Wird mit den Patches, die ihn brauchen,
+        automatisch installiert.
   - id: netfix
     name: Netfix (multiplayer host)
     type: e1400patch_module
     url: https://github.com/europa1400-community/europa1400-patches/releases/latest/download/netfix.zip
+    version: 0.1.0
     requires:
       - e1400patch
+    conflicts:
+      - networkfix
+    category: multiplayer
+    author: europa1400-community
+    homepage: https://github.com/europa1400-community/europa1400-patches/blob/main/patches/netfix/README.md
+    description:
+      en: >-
+        For the player who hosts a multiplayer game (the others need nothing). Over VPNs and the Internet game
+        messages often arrive in pieces, which the server of the game cannot handle; Netfix makes it wait for complete
+        messages and answer faster.
+      de: >-
+        Für den Spieler, der ein Mehrspielerspiel hostet (die anderen brauchen nichts). Über VPNs und das Internet
+        kommen Spielnachrichten oft in Stücken an, womit der Server des Spiels nicht umgehen kann; Netfix lässt ihn auf
+        vollständige Nachrichten warten und schneller antworten.

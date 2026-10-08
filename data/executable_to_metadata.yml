@@ -11,14 +11,13 @@ elements:
     metadata:
       edition: gold
       language: de
+  # Europa1400*.exe: English GOG and retail, but also the German Steam version, so no language here
   - id: europa1400
     executable: europa1400
     metadata:
       edition: standard
-      language: en
   - id: europa1400_gold
     executable: europa1400_gold
     metadata:
       edition: gold
-      language: en
 

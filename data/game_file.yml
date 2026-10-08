@@ -1,0 +1,48 @@
+id: game_file
+name: Known Game Files
+# SHA-256 of game executables and server.dll for exact identification (europa1400-manager 2.0 or newer).
+# role: game_d3d8 (Direct3D 8 renderer), game_dx6 (DirectDraw renderer), server (server.dll).
+# Only checksums of files, never the files themselves.
+elements:
+  - id: gold_de_gog_d3d8
+    sha256: cd40c06ee82db8e240a32d50f24481dfa980594a6faebd5c55989ef08cb2f6d0
+    file: GildeGold_TL.exe
+    role: game_d3d8
+    metadata: {edition: gold, version: v2.06, distribution: gog, language: de, drm: none}
+  - id: gold_de_gog_dx6
+    sha256: d6f20fda136cd7ced612b96094e527a137f129543753f0fec0e357f6aecb3074
+    file: GildeGold.exe
+    role: game_dx6
+    metadata: {edition: gold, version: v2.06, distribution: gog, language: de, drm: none}
+  - id: gold_de_steam_d3d8
+    sha256: a909e8c0398451d6e405ea6b3e601209a1c50dd7edf8799b3bc3d5a23ce10c37
+    file: Europa1400Gold.exe
+    role: game_d3d8
+    metadata: {edition: gold, version: v2.06, distribution: steam, language: de, drm: steam}
+    note: Steam names the German executables like the English ones.
+  - id: gold_de_steam_dx6
+    sha256: 41bc9c214166be804af3fbee443d01a157bed43f965057981f321fade278e30a
+    file: Europa1400Gold_TL.exe
+    role: game_dx6
+    metadata: {edition: gold, version: v2.06, distribution: steam, language: de, drm: steam}
+  - id: gold_de_server
+    sha256: b341730ba273255fb0099975f30a7b1a950e322be3a491bfd8e137781ac97f06
+    file: Server/server.dll
+    role: server
+    metadata: {edition: gold, version: v2.06, language: de}
+    note: identical in the German GOG and Steam versions
+  - id: gold_en_gog_d3d8
+    sha256: 6fe7a24c93192f6511bc8595eb82fd166db44f6cbeaf7c2f036838f3b6b4af45
+    file: Europa1400Gold_TL.exe
+    role: game_d3d8
+    metadata: {edition: gold, distribution: gog, language: en, drm: none}
+  - id: gold_en_gog_dx6
+    sha256: 7d1f178f6463ab41f90987451187a93056814293832a5d2c76444dbd087e3ae8
+    file: Europa1400Gold.exe
+    role: game_dx6
+    metadata: {edition: gold, distribution: gog, language: en, drm: none}
+  - id: gold_en_gog_server
+    sha256: 3cc2ce9049e41ab6d0eea042df4966fbf57e5e27c67fb923e81709d2683609d1
+    file: Server/server.dll
+    role: server
+    metadata: {edition: gold, distribution: gog, language: en}
