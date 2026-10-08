@@ -17,12 +17,11 @@ elements:
     homepage: https://github.com/narzoul/DDrawCompat
     description:
       en: >-
-        Fixes DirectDraw problems on current Windows versions (the classic renderer uses DirectDraw). The GOG and
-        Steam versions already ship a copy; installing replaces it with this version, uninstalling restores it.
+        Fixes DirectDraw problems on current Windows versions (the classic renderer uses DirectDraw). A ddraw.dll
+        that is already in the game folder is backed up and restored on uninstall.
       de: >-
-        Behebt DirectDraw-Probleme auf aktuellen Windows-Versionen (der klassische Renderer nutzt DirectDraw). GOG und
-        Steam liefern bereits eine Kopie mit; die Installation ersetzt sie durch diese Version, die Deinstallation
-        stellt sie wieder her.
+        Behebt DirectDraw-Probleme auf aktuellen Windows-Versionen (der klassische Renderer nutzt DirectDraw). Eine
+        schon vorhandene ddraw.dll wird gesichert und beim Deinstallieren wiederhergestellt.
   - id: networkfix
     name: Network Fix
     type: simple
