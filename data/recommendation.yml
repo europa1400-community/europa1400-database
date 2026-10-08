@@ -1,0 +1,47 @@
+id: recommendation
+name: Recommended Setups
+# What the manager (2.0 or newer) offers as one-click setup for a game version. An element applies when every field
+# of its metadata matches the detected game; several elements can apply (their items are combined).
+# level: recommended (selected by default) or optional (offered, not selected).
+# Only add what is known to be right for that version; reason is shown to the player.
+elements:
+  - id: gold
+    name: Gold Edition
+    metadata: {edition: gold}
+    patches:
+      - patch: dxwrapper
+        level: recommended
+        reason:
+          en: Fixes the broken interface textures of the Direct3D 8 renderer on Windows Vista and newer.
+          de: Behebt die kaputten Oberflächentexturen des Direct3D-8-Renderers ab Windows Vista.
+      - patch: ddraw_compat
+        level: optional
+        reason:
+          en: Only for the classic renderer (DirectDraw); helps with display problems there.
+          de: Nur für den klassischen Renderer (DirectDraw); hilft dort bei Darstellungsproblemen.
+    settings:
+      - file: game.ini
+        section: General
+        key: Bildmodus
+        value: DIRECTWINDOW
+        level: optional
+        reason:
+          en: Window instead of fullscreen; helps when fullscreen flickers or shows a black screen.
+          de: Fenster statt Vollbild; hilft, wenn das Vollbild flackert oder schwarz bleibt.
+      - file: game.ini
+        section: General
+        key: show_intro
+        value: "0"
+        level: optional
+        reason:
+          en: Skips the intro video at every start.
+          de: Überspringt das Intro bei jedem Start.
+  - id: gold_de_206
+    name: Gold Edition 2.06 (German)
+    metadata: {edition: gold, version: v2.06, language: de}
+    patches:
+      - patch: netfix
+        level: recommended
+        reason:
+          en: Stable multiplayer over VPN and Internet when you host; changes nothing in single player.
+          de: Stabiler Mehrspieler über VPN und Internet, wenn du hostest; ändert nichts im Einzelspieler.

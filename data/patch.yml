@@ -1,29 +1,83 @@
 id: patch
 name: Game Patches
+# Third-party patches. Besides id, name, url and type every field is optional; older managers ignore unknown fields
+# but fail on unknown types, so new patch types go into tables of their own (e1400patch.yml).
+# sha256: checksum of the download (only for URLs of a fixed version); version: shown to players, a change offers an
+# update; description: per language code.
 elements:
   - id: ddraw_compat
     name: DDrawCompat
     type: archive
     url: https://github.com/narzoul/DDrawCompat/releases/download/v0.6.0/DDrawCompat-v0.6.0.zip
+    sha256: 8bbe95c2603b21d76d709cd30fd360172ad18dd112c3f9b4eed55acca493d7ae
+    version: 0.6.0
     file_name: ddraw.dll
+    category: compatibility
+    author: narzoul
+    homepage: https://github.com/narzoul/DDrawCompat
+    description:
+      en: >-
+        Fixes DirectDraw problems on current Windows versions (the classic renderer uses DirectDraw). A ddraw.dll
+        that is already in the game folder is backed up and restored on uninstall.
+      de: >-
+        Behebt DirectDraw-Probleme auf aktuellen Windows-Versionen (der klassische Renderer nutzt DirectDraw). Eine
+        schon vorhandene ddraw.dll wird gesichert und beim Deinstallieren wiederhergestellt.
   - id: networkfix
     name: Network Fix
     type: simple
     url: https://github.com/maci0/europa1400-networkfix/releases/download/latest/networkfix.asi
+    category: multiplayer
+    author: maci0
+    homepage: https://github.com/maci0/europa1400-networkfix
+    conflicts:
+      - netfix
+    description:
+      en: >-
+        An older, independent multiplayer fix (ASI plugin, loaded by the sound system of the game). Not to be combined
+        with Netfix.
+      de: >-
+        Ein älterer, unabhängiger Mehrspieler-Fix (ASI-Plugin, wird vom Soundsystem des Spiels geladen). Nicht
+        zusammen mit Netfix verwenden.
   - id: dxvk
     name: DXVK
     type: archive
     url: https://github.com/doitsujin/dxvk/releases/download/v2.7.1/dxvk-2.7.1.tar.gz
+    sha256: d85ce7c79f57ecd765aaa1b9e7007cb875e6fde9f6d331df799bce73d513ce87
+    version: 2.7.1
     file_name: d3d9.dll
-    archive_file_name: x64/d3d9.dll
+    archive_file_name: x32/d3d9.dll
+    requires:
+      - dxwrapper
+    category: graphics
+    author: Philip Rebohle (doitsujin)
+    homepage: https://github.com/doitsujin/dxvk
+    description:
+      en: >-
+        Translates Direct3D 9 to Vulkan. Works together with DxWrapper (installed with it); can help with performance
+        or display problems, especially on Linux.
+      de: >-
+        Übersetzt Direct3D 9 nach Vulkan. Arbeitet zusammen mit DxWrapper (wird mit installiert); kann bei Leistungs-
+        oder Darstellungsproblemen helfen, besonders unter Linux.
   - id: dxwrapper
     name: DxWrapper
     type: archive
     url: https://github.com/elishacloud/dxwrapper/releases/download/v1.4.7900.25/dx8.games.zip
-    file_name: 
+    sha256: 4eeda479019d53e0d6b9955533419824f9f92e24d7ff71ac51a2207f925ae5bd
+    version: 1.4.7900.25
+    file_name:
       - d3d8.dll
       - dxwrapper.dll
       - dxwrapper.ini
+    category: graphics
+    author: Elisha Riedlinger (elishacloud)
+    homepage: https://github.com/elishacloud/dxwrapper
+    description:
+      en: >-
+        Runs the Direct3D 8 graphics of the game through Direct3D 9 and fixes the broken interface textures on current
+        Windows versions (SetPOW2Caps).
+      de: >-
+        Lässt die Direct3D-8-Grafik des Spiels über Direct3D 9 laufen und behebt die kaputten Oberflächentexturen auf
+        aktuellen Windows-Versionen (SetPOW2Caps).
     file_operations:
       - type: ini
         file_name: dxwrapper.ini

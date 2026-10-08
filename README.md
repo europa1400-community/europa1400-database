@@ -20,6 +20,8 @@ YAML tables in [`data/`](data/):
 | `patch.yml` | third-party patches (DDrawCompat, DXVK, dxwrapper, ...) |
 | `e1400patch.yml` | patch loader and patches of [europa1400-patches](https://github.com/europa1400-community/europa1400-patches) (manager 1.2 or newer) |
 | `metadata_to_patch.yml` | which patch fits which game version |
+| `recommendation.yml` | recommended and optional patches and settings per game version (one-click setup in manager 2.0) |
+| `game_file.yml` | SHA-256 of known game files for exact version detection (manager 2.0) |
 
 The manager downloads the tables from the `master` branch, so a merged change reaches every player at the next start.
 Older managers fail on patch types they do not know: new patch types go into a table of their own (like
