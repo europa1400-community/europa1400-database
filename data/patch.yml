@@ -30,7 +30,3 @@ elements:
         section: d3d9
         key: SetPOW2Caps
         value: 1
-  - id: e1400patch
-    name: E1400 Patch Loader
-    type: e1400patch_loader
-    url: https://github.com/europa1400-community/europa1400-patches/releases/latest/download/e1400patch.zip
