@@ -11,3 +11,7 @@ elements:
   - id: dxwrapper
     patch: dxwrapper
     metadata: {}
+  - id: e1400patch
+    patch: e1400patch
+    metadata:
+      edition: gold
