@@ -1,0 +1,13 @@
+id: e1400patch
+name: europa1400-patches (patch loader and patch modules, needs europa1400-manager 1.2 or newer)
+elements:
+  - id: e1400patch
+    name: E1400 Patch Loader
+    type: e1400patch_loader
+    url: https://github.com/europa1400-community/europa1400-patches/releases/latest/download/e1400patch.zip
+  - id: netfix
+    name: Netfix (multiplayer host)
+    type: e1400patch_module
+    url: https://github.com/europa1400-community/europa1400-patches/releases/latest/download/netfix.zip
+    requires:
+      - e1400patch

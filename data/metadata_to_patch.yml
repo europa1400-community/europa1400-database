@@ -11,3 +11,11 @@ elements:
   - id: dxwrapper
     patch: dxwrapper
     metadata: {}
+  - id: e1400patch
+    patch: e1400patch
+    metadata:
+      edition: gold
+  - id: e1400patch_netfix
+    patch: netfix
+    metadata:
+      edition: gold
