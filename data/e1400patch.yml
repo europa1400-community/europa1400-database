@@ -61,3 +61,22 @@ elements:
         deshalb immer auf dem letzten Bildschirm. Gfxfix zeigt dem Spiel genau einen Bildschirm; welchen, stellst
         du in den Spieleinstellungen des Managers ein (oder monitor= in gfxfix.ini). Nicht kombinierbar mit
         DxWrapper (beide nutzen d3d8.dll); behebt außerdem die abgeschnittenen Oberflächengrafiken (POW2-Texturcaps), DxWrapper ist dafür nicht nötig.
+  - id: monitorfix
+    name: Monitorfix (old, replaced by Gfxfix)
+    type: archive
+    url: https://github.com/europa1400-community/europa1400-patches/releases/latest/download/gfxfix.zip
+    file_name:
+      - d3d8.dll
+      - monitorfix.ini
+    conflicts:
+      - gfxfix
+      - dxwrapper
+    category: graphics
+    author: europa1400-community
+    homepage: https://github.com/europa1400-community/europa1400-patches
+    description:
+      en: >-
+        Old name of Gfxfix, kept only so that it can be uninstalled. Uninstall it, then install Gfxfix.
+      de: >-
+        Alter Name von Gfxfix, nur noch da, damit man ihn deinstallieren kann. Deinstalliere ihn und installiere dann
+        Gfxfix.
