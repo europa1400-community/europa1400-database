@@ -38,3 +38,26 @@ elements:
         Für den Spieler, der ein Mehrspielerspiel hostet (die anderen brauchen nichts). Über VPNs und das Internet
         kommen Spielnachrichten oft in Stücken an, womit der Server des Spiels nicht umgehen kann; Netfix lässt ihn auf
         vollständige Nachrichten warten und schneller antworten.
+  - id: monitorfix
+    name: Monitorfix (choose the monitor)
+    type: archive
+    url: https://github.com/europa1400-community/europa1400-patches/releases/latest/download/monitorfix.zip
+    version: 0.1.0
+    file_name:
+      - d3d8.dll
+      - monitorfix.ini
+    conflicts:
+      - dxwrapper
+    category: graphics
+    author: europa1400-community
+    homepage: https://github.com/europa1400-community/europa1400-patches/blob/main/package/MONITORFIX.txt
+    description:
+      en: >-
+        For PCs with several monitors: the game remembers its graphics choice by graphics card only and therefore
+        always starts on the last monitor. Monitorfix shows the game exactly one monitor; choose which in the game
+        settings of the manager (or monitor= in monitorfix.ini). Not compatible with DxWrapper (both use d3d8.dll).
+      de: >-
+        Für PCs mit mehreren Bildschirmen: Das Spiel merkt sich seine Grafikauswahl nur pro Grafikkarte und startet
+        deshalb immer auf dem letzten Bildschirm. Monitorfix zeigt dem Spiel genau einen Bildschirm; welchen, stellst
+        du in den Spieleinstellungen des Managers ein (oder monitor= in monitorfix.ini). Nicht kombinierbar mit
+        DxWrapper (beide nutzen d3d8.dll).
